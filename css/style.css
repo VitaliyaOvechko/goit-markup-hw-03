@@ -21,15 +21,51 @@ body  {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .link {
     text-decoration: none;
+}
+.container {
+        width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 /* header */
 
 .header {
-    background-color: var(--background-header);
+    background-color: var(--background-white);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-list {
+        display: flex;
+        margin-left: 90px;
+}
+
+.header-item:not(:last-child) {
+        margin-right: 50px;
+}
+.main-header {
+        display: flex;
+        align-items: center;
+}
+
+.header-link {
+        display: block;
+}
+
+.list-contact {
+        display: flex;
+        margin-left: auto;
+}       
+
+.main-nav {
+        display: flex;
 }
 
 .header-logo {
@@ -58,9 +94,29 @@ body  {
         color: var(--second-main-color);
 }
 
+.header-link:hover,
+.header-link:focus {
+        color: var(--accent-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+        color: var(--accent-color);
+}
+
+.header-link.current {
+        color: var(--accent-color);
+}
+
 /* main */
 
+.hero {
+        text-align: center;
+}
 h1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -69,33 +125,26 @@ h1 {
         text-transform: uppercase;
         color: var(--white);
         background-color: var(--background-footer);
-    }
+}
 
 .main-button {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 10px 32px;
+        border: 1px solid transparent;
+
         front-family:inherit;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
-        display: flex;
+
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
+
         color: var(--white);
         background-color: var(--background-accent);
         cursor:pointer;
-}
-
-.header-link:hover,
-.header-link:focus {
-        color: var(--accent-color);
-}
-.header-contact:hover,
-.header-contact:focus {
-        color: var(--accent-color);
-}
-
-.header-link.current {
-        color: var(--accent-color);
 }
 
 .visually-hidden {
@@ -111,10 +160,19 @@ h1 {
     margin: -1px;
 }
 
+.fundamental {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        text-align: center;
+}
+
 .fundamental-list {
         background-color: var(--background-main);
 }
 .fundamental-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -122,12 +180,20 @@ h1 {
         text-transform: uppercase;
 }
 .fundamental-text {
+        margin-top: 0;
+        margin-bottom: 0;
+
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color:var(--second-main-color);
 }
 .properties-head {
+        margin-top: 0;
+        margin-bottom: 50px;
+
+        text-align: center;
+
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -138,9 +204,15 @@ h1 {
     background-color: var(--background-main);
 }
 .team {
+    padding-top: 90px;
+    padding-bottom: 94px;
+    
     background-color: var(--background-second);
 }
 .team-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -148,6 +220,9 @@ h1 {
         letter-spacing: 0.03em
 }
 .team-members {
+        margin-top: 30px;
+        margin-bottom: 10px;
+
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19;
@@ -155,6 +230,10 @@ h1 {
         letter-spacing: 0.03em;
 }
 .team-text {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -198,10 +277,22 @@ h1 {
 }
 
 /* portfolio */
+
 .projects {
-    background-color: var(--background-main);
+    background-color: var(--background-white);
 }
+
+.project-filtr {
+        margin-bottom: 50px;
+}
+
 .project-button {
+        display: inline-block;
+        border-radius: 4px;
+        min-width: 73px;
+
+        border: transparent;
+
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
@@ -221,12 +312,18 @@ h1 {
         background-color: var(--background-accent);
 }
 .project-title {
+        margin-top: 20px;
+        margin-bottom: 4px;
+
         font-weight: 700;
         font-size: 18px;                
         line-height: 2;
         letter-spacing: 0.06em;
 }
 .project-text {
+        margin-top: 0;
+        margin-bottom: 20px;
+
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
