@@ -430,6 +430,7 @@ h1 {
 }
 
 .project-item {
+        flex-basis: calc((100% - 60px) / 3);
         background-color: var(--backgground-portfolio-cards);
 }       
 
