@@ -12,7 +12,6 @@
 --backgground-portfolio-cards:#EEEEEE;
 }
 
-
 body  {
     font-family: 'Roboto', sans-serif;
     color: var(--main-color);
@@ -129,27 +128,28 @@ img {
         color: var(--accent-color);
 }
 
-/* main */
+/*hero*/
 
 .hero {
         text-align: center;
+        background-color: var(--background-footer);
 }
-h1 {
+h1 {    
+        max-width: 696px;
         margin-top: 0;
         margin-bottom: 30px;
+        margin-right: 0;
 
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
+        text-transform: uppercase;      
         color: var(--white);
-        background-color: var(--background-footer);
 }
 
 .main-button {
-        display: inline-block;
         border-radius: 4px;
         padding: 10px 32px;
         border: 1px solid transparent;
@@ -168,6 +168,14 @@ h1 {
         cursor:pointer;
 }
 
+.hero-content {
+        display: inline-block;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        text-align: center;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -180,6 +188,8 @@ h1 {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+/*fundamental*/
 
 .fundamental {
         text-align: center;
@@ -220,6 +230,9 @@ h1 {
         letter-spacing: 0.03em;
         color:var(--second-main-color);
 }
+
+/*properties*/
+
 .properties-head {
         margin-top: 0;
         margin-bottom: 50px;
@@ -245,6 +258,8 @@ h1 {
         margin-right: 30px;
 }
 
+/*team*/
+
 .team {  
     background-color: var(--background-second);
 }
@@ -268,7 +283,7 @@ h1 {
         letter-spacing: 0.03em
 }
 .team-members {
-        margin-top: 30px;
+        margin-top: 0;
         margin-bottom: 10px;
 
         font-weight: 500;
@@ -280,7 +295,6 @@ h1 {
 .team-text {
         margin-top: 0;
         margin-bottom: 0;
-        padding-bottom: 30px;
 
         font-size: 16px;
         line-height: 1.19;
@@ -292,17 +306,21 @@ h1 {
     background-color: var(--background-main);
 }
 
+.team-content {
+        padding-top: 30px;
+        padding-bottom: 30px;
+}
 /* footer */
 
 .footer {
-    background-color: var(--background-footer);
+        background-color: var(--background-footer);
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 
 .footer-content {
         display: flex;
         flex-direction:column;
-        padding-top: 60px;
-        padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -326,10 +344,12 @@ h1 {
         color: var(--white)
 }
 .footer-contact {
+        margin-top: 9px;
+
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
-        color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6)
 }
 
 .footer-contact:hover,
@@ -349,13 +369,14 @@ h1 {
         margin-bottom: 50px;
 }
 .project-filtr-item:not(:last-child){
-        margin-left: 8px;
+        margin-right: 8px;
 }
 
 .project-button {
         display: inline-block;
         border-radius: 4px;
         min-width: 73px;
+        padding: 6px 22px;
 
         border: transparent;
 
@@ -373,7 +394,9 @@ h1 {
         color: var(--white);
         background-color: var(--background-accent);
 }
+
 .project-button:focus {
+
         color: var(--white);
         background-color: var(--background-accent);
 }
@@ -395,25 +418,23 @@ h1 {
         line-height: 2;
         letter-spacing: 0.06em;
 }
+
 .project-text {
         margin-top: 0;
-        margin-bottom: 20px;
-        /* margin-left: 24px;
-        margin-right: 24px; */
+        margin-bottom: 0;
 
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
         color: var(--second-main-color);
 }
+
 .project-item {
         background-color: var(--backgground-portfolio-cards);
 }       
 
 .cards{
-        padding-top: 20px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding: 20px 24px;
 
         border-right-width: 1px;
         border-right-style: solid;
